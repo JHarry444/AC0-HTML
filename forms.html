@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+
+<body>
+    <h1>Forms</h1>
+    <div>
+        <h2>Register (POST)</h2>
+        <form method="POST" action="/register">
+            <label for="userInput">Username</label>
+            <input type="text" name="user" id="userInput" required minlength="3" maxlength="10">
+            <!-- an input's name provides a key for its value -->
+            <br>
+            <br>
+            <label for="pwdInput">Password</label>
+            <input type="password" name="pwd" id="pwdInput" required>
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+    <div>
+        <h2>Search (GET)</h2>
+        <form method="GET" action="/search">
+            <label for="searchInput">Search</label>
+            <input type="text" name="q" id="searchInput">
+
+            in
+            <br>
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+
+</html>
